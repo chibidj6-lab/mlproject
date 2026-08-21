@@ -1,0 +1,8 @@
+# will have all the packages to install the project
+# In setup.py, the required packages will be more so instead of writing as below we use requirements.txt file to list all the required packages and then use the install_requires argument in setup.py to install the packages listed in requirements.txt file. 
+# install_requires=['pandas', 'numpy', 'scikit-learn', 'seaborn']
+pandas
+numpy
+seaborn
+-e .
+# this -e . will connect back to the setup.py file and install the packages listed in requirements.txt file.
