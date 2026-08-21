@@ -4,5 +4,5 @@
 pandas
 numpy
 seaborn
--e .
+# -e .
 # this -e . will connect back to the setup.py file and install the packages listed in requirements.txt file.
