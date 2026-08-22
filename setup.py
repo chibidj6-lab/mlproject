@@ -1,7 +1,7 @@
 # setup.py is used to build the entire machine learning project as a package so that others can install and use it
 from typing import List
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 def get_requirements(file_path: str) -> List[str]:
     '''
@@ -25,6 +25,6 @@ setup(
     version="0.0.1",
     author = "Chibi",
     author_email = "chibidj6@gmail.com",
-    packages=find_packages(),
+    packages= find_packages(),
     install_requires= get_requirements('requirements.txt')
 )
