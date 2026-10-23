@@ -1,8 +1,57 @@
 # will have all the packages to install the project
 # In setup.py, the required packages will be more so instead of writing as below we use requirements.txt file to list all the required packages and then use the install_requires argument in setup.py to install the packages listed in requirements.txt file. 
 # install_requires=['pandas', 'numpy', 'scikit-learn', 'seaborn']
+pydantic
 pandas
 numpy
 seaborn
+tensorflow
+scikit-learn 
+xgboost
+
+# SHAP for Model Interpretability
+shap
+
+# Document Loading
+# webbase-loader
+
+# API
+langserve
+fastapi
+uvicorn
+sse_starlette
+
+# RAG pipeline
+langchain
+langchain-text-splitters
+beautifulsoup4
+langchain-community # Your code imports from here. It contains the non-core tools like Wikipedia and Arxiv wrappers.
+pypdf
+langchain-chroma
+chromadb # Vector Store
+faiss-cpu # Vector Store - is the standard version for local machines (no GPU needed).
+# langchain-hub
+
+# OLAMA
+langchain_core
+python-dotenv # Environment Management
+streamlit
+langchain_ollama # Local LLM Integration - This is the bridge that lets LangChain talk to your local Ollama instance.
+langchain-classic
+
+# API Wrappers (Wikipedia & Arxiv)
+# RAG Pipeline withMultiple Data Sources
+wikipedia
+arxiv
+
+# Modern Agent Engine
+langgraph
+
+# Windows System Utilities (Prevents encoding errors)
+python-magic-bin
+
 # -e .
 # this -e . will connect back to the setup.py file and install the packages listed in requirements.txt file.
+
+# run this command in the terminal to install the packages listed in requirements.txt file
+# pip install -r requirements.txt 

@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 # if an error occurs in the code, we want to know where the error occurred and what the error is.
 def error_message_detail(error, error_detail:sys): # error detial will be in this sys
